@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DeepAR Test</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="t">
+            <div class="t2">
+                <div class="t3">
+                    <video id="videoElement"></video>
+                </div>
+                <table class="t4">
+                    <tr>
+                        <td>
+                            <label for="chin_raise">Chin raise</label>
+                        </td>
+                        <td>
+                            <input type="range" id="chin_raise" name="chin_raise" value="0" min="-100" max="100" step="0.1">
+                        </td>
+                        <td>
+                            <input type="number" id="chin_raiseValue" name="chin_raiseValue" value="0" step="0.1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="big_eyes">Big eyes</label>
+                        </td>
+                        <td>
+                            <input type="range" id="big_eyes" name="big_eyes" value="0" min="-100" max="100" step="0.1">
+                        </td>
+                        <td>
+                            <input type="number" id="big_eyesValue" name="big_eyesValue" value="0" step="0.1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="face_narrow">Face narrow</label>
+                        </td>
+                        <td>
+                            <input type="range" id="face_narrow" name="face_narrow" value="0" min="-100" max="100" step="0.1">
+                        </td>
+                        <td>
+                            <input type="number" id="face_narrowValue" name="face_narrowValue" value="0" step="0.1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nose_small">Nose small</label>
+                        </td>
+                        <td>
+                            <input type="range" id="nose_small" name="nose_small" value="0" min="-100" max="100" step="0.1">
+                        </td>
+                        <td>
+                            <input type="number" id="nose_smallValue" name="nose_smallValue" value="0" step="0.1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="smoothingAmount">Smoothing</label>
+                        </td>
+                        <td>
+                            <input type="range" id="smoothingAmount" name="smoothingAmount" value="0" min="0" max="3" step="0.01">
+                        </td>
+                        <td>
+                            <input type="number" id="smoothingAmountValue" name="smoothingAmountValue" value="0" step="0.01">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/lib/deepar.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
