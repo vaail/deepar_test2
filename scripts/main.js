@@ -4,21 +4,25 @@ const init = () => {
     const streamVideo = document.querySelector("#videoElement");
     let filterInited = false;
 
-    sourceVideo.style.position = 'fixed'
-    sourceVideo.style.top = 0
-    sourceVideo.style.left = 0
-    sourceVideo.style.width = '100%'
-    sourceVideo.style.height = '100%'
+    streamVideo.setAttribute('autoplay', '');
+    streamVideo.setAttribute('muted', '');
+    streamVideo.setAttribute('playsinline', '');
+
+    // sourceVideo.style.position = 'fixed'
+    // sourceVideo.style.top = 0
+    // sourceVideo.style.left = 0
+    // sourceVideo.style.width = '100%'
+    // sourceVideo.style.height = '100%'
     sourceVideo.setAttribute('autoplay', '');
     sourceVideo.setAttribute('muted', '');
     sourceVideo.setAttribute('playsinline', '');
 
-    deeparCanvas.style.position = 'fixed'
-    deeparCanvas.style.top = 0
-    deeparCanvas.style.left = 0
-    deeparCanvas.style.width = '100%'
-    deeparCanvas.style.height = '100%'
-    window.document.body.appendChild(deeparCanvas)
+    // deeparCanvas.style.position = 'fixed'
+    // deeparCanvas.style.top = 0
+    // deeparCanvas.style.left = 0
+    // deeparCanvas.style.width = '100%'
+    // deeparCanvas.style.height = '100%'
+    // window.document.body.appendChild(deeparCanvas)
 
     const initVideoSource = () => {
         if (navigator.mediaDevices.getUserMedia) {
