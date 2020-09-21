@@ -54,6 +54,7 @@ const init = () => {
         canvas: deeparCanvas,
         numberOfFaces: 1, // how many faces we want to track min 1, max 4
         onInitialize: () => {
+            console.log('onInitialize');
             if (!filterInited) {
                 deepAR.switchEffect(0, 'slot', 'scripts/effects/beauty', () => {
                     deepAR.changeParameterFloat('faceMorphFluffy', 'MeshRenderer', 'chin_raise', 0)
@@ -71,6 +72,9 @@ const init = () => {
             windowVisibilityHandler(deepAR)
 
             initVideoSource()
+        },
+        onVideoStarted: function() {
+            console.log('onVideoStarted 2');
         }
     })
 
