@@ -4,6 +4,9 @@ sourceVideo.style.top = 0
 sourceVideo.style.left = 0
 sourceVideo.style.width = '100%'
 sourceVideo.style.height = '100%'
+sourceVideo.setAttribute('autoplay', '');
+sourceVideo.setAttribute('muted', '');
+sourceVideo.setAttribute('playsinline', '');
 window.document.body.appendChild(sourceVideo)
 
 if (navigator.mediaDevices.getUserMedia) {
