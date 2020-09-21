@@ -15,7 +15,8 @@ const init = () => {
             navigator.mediaDevices.getUserMedia({
                 video: {
                     width: { ideal: 4096 },
-                    height: { ideal: 2160 }
+                    height: { ideal: 2160 },
+                    facingMode: 'front'
                 }
             })
                 .then(function (stream) {
