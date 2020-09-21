@@ -28,8 +28,8 @@ const init = () => {
         if (navigator.mediaDevices.getUserMedia) {
             navigator.mediaDevices.getUserMedia({
                 video: {
-                    width: { ideal: 4096 },
-                    height: { ideal: 2160 },
+                    width: { ideal: 640 },
+                    height: { ideal: 480 },
                     facingMode: 'front'
                 }
             })
