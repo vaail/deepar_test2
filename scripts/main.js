@@ -13,7 +13,12 @@ const init = () => {
     sourceVideo.setAttribute('muted', '');
     sourceVideo.setAttribute('playsinline', '');
 
-    window.document.body.appendChild(sourceVideo)
+    deeparCanvas.style.position = 'fixed'
+    deeparCanvas.style.top = 0
+    deeparCanvas.style.left = 0
+    deeparCanvas.style.width = '100%'
+    deeparCanvas.style.height = '100%'
+    window.document.body.appendChild(deeparCanvas)
 
     const initVideoSource = () => {
         if (navigator.mediaDevices.getUserMedia) {
