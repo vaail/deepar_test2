@@ -13,6 +13,8 @@ const init = () => {
     sourceVideo.setAttribute('muted', '');
     sourceVideo.setAttribute('playsinline', '');
 
+    window.document.body.appendChild(sourceVideo)
+
     const initVideoSource = () => {
         if (navigator.mediaDevices.getUserMedia) {
             navigator.mediaDevices.getUserMedia({
