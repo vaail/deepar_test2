@@ -132,8 +132,4 @@ const init = () => {
     deepAR.downloadFaceTrackingModel('scripts/lib/models-68-extreme.bin');
 }
 
-if (window.location.host !== 'cn.kissxin.com' || window.location.protocol !== 'https:') {
-    window.location = "https://cn.kissxin.com/ar-test/"
-} else {
-    init();
-}
+init();
