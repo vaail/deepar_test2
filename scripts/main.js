@@ -75,9 +75,12 @@ const init = () => {
     })
 
     deepAR.onVideoStarted = function() {
-        streamVideo.srcObject = deeparCanvas.captureStream()
+        console.log('onVideoStarted');
+        const stream = deeparCanvas.captureStream()
+        streamVideo.srcObject = stream
         streamVideo.muted = true
         streamVideo.play()
+        console.log('onVideoStarted', stream);
     };
 
     const windowVisibilityHandler = (deepAR) => {
