@@ -30,7 +30,7 @@ const init = () => {
     }
 
     const deepAR = DeepAR({
-        licenseKey: 'f0d2ed004679600114586d8f640a201657717e415f969aea4a3f1ff6ab251a9c3e219cb59769c105',
+        licenseKey: 'fea9ce44dbbd37971a8e3103f25e9d2dc20aa7f20289158ff84ec2c76ab739577644cf37c0d2bc57',
         canvasWidth: 4096,
         canvasHeight: 2160,
         canvas: deeparCanvas,
