@@ -1,5 +1,11 @@
 const init = () => {
     const sourceVideo = document.createElement('video')
+    sourceVideo.style.position = 'fixed'
+    sourceVideo.style.top = 0
+    sourceVideo.style.left = 0
+    sourceVideo.style.width = '33%'
+    sourceVideo.style.height = 'auto'
+    window.document.body.appendChild(sourceVideo)
     const deeparCanvas = document.createElement('canvas')
     const streamVideo = document.querySelector("#videoElement");
     let filterInited = false;
